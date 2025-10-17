@@ -1,0 +1,169 @@
+
+// mes couleurs 
+$couleur-blanc: white;
+$couleur-texte-principal: #333;
+$couleur-titre-principal: #2c3e50;
+$couleur-titre-secondaire: #3498db;
+$couleur-bordure: #ecf0f1;
+$couleur-rouge: #e74c3c;
+$couleur-gris-footer: #7f8c8d;
+$couleur-ombre: rgba(243, 200, 200, 0.553);
+
+// anim du titre 
+@keyframes apparition-titre {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: $couleur-blanc;
+    margin: 0;
+    padding: 20px;
+    color: $couleur-texte-principal;
+}
+        
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: $couleur-blanc;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px $couleur-ombre;
+}
+        
+h1 {
+    text-align: center;
+    color: $couleur-titre-principal;
+    margin-bottom: 30px;
+    font-size: 2.2em;
+    font-weight: 300;
+    animation: apparition-titre 1.5s ease-out;
+    animation-fill-mode: both;
+}
+        
+h2 {
+    color: $couleur-titre-secondaire;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-weight: 400;
+    border-bottom: 2px solid $couleur-bordure;
+    padding-bottom: 10px;
+}
+        
+
+
+img{
+
+    border-radius: 10px;
+
+
+}
+
+nav {
+    text-align: center;
+    background-color: $couleur-bordure;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+        
+        nav h2 {
+            margin-top: 0;
+            border: none;
+            padding: 0;
+        }
+        
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        
+nav a {
+    color: $couleur-titre-secondaire;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+        
+nav a:hover {
+    background-color: $couleur-titre-secondaire;
+    color: $couleur-blanc;
+}
+        
+.photo-section {
+    text-align: center;
+    margin: 30px 0;
+}
+        
+        
+        
+table {
+    width: 100%;
+    margin: 20px 0;
+    border-collapse: collapse;
+}
+        
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid $couleur-bordure;
+}
+        
+th {
+    background-color: $couleur-titre-secondaire;
+    color: $couleur-blanc;
+    text-align: center;
+}
+        
+     
+        
+section {
+    margin-bottom: 30px;
+}
+        
+strong {
+    color: $couleur-rouge;
+}
+        
+em {
+    color: $couleur-titre-secondaire;
+}
+
+td {
+    left: 50%;
+}
+
+
+
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    border-top: 1px solid $couleur-bordure;
+    color: $couleur-gris-footer;
+    font-size: 0.9em;
+}
+        
+        
+ 
+ 
+ 
+footer p {
+    text-align: left;
+} 
+
+
+
